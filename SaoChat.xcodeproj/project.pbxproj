@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		490DF3F81A3DA9B100379EA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF3F71A3DA9B100379EA3 /* main.m */; };
 		490DF3FB1A3DA9B100379EA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF3FA1A3DA9B100379EA3 /* AppDelegate.m */; };
-		490DF3FE1A3DA9B100379EA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF3FD1A3DA9B100379EA3 /* ViewController.m */; };
 		490DF4011A3DA9B100379EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490DF3FF1A3DA9B100379EA3 /* Main.storyboard */; };
 		490DF4031A3DA9B100379EA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490DF4021A3DA9B100379EA3 /* Images.xcassets */; };
 		490DF4061A3DA9B100379EA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490DF4041A3DA9B100379EA3 /* LaunchScreen.xib */; };
 		490DF4121A3DA9B100379EA3 /* SaoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF4111A3DA9B100379EA3 /* SaoChatTests.m */; };
+		490DF41D1A3DAB1E00379EA3 /* SCJoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		490DF3F71A3DA9B100379EA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		490DF3F91A3DA9B100379EA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		490DF3FA1A3DA9B100379EA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		490DF3FC1A3DA9B100379EA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		490DF3FD1A3DA9B100379EA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		490DF4001A3DA9B100379EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		490DF4021A3DA9B100379EA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		490DF4051A3DA9B100379EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		490DF40B1A3DA9B100379EA3 /* SaoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		490DF4101A3DA9B100379EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490DF4111A3DA9B100379EA3 /* SaoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaoChatTests.m; sourceTree = "<group>"; };
+		490DF41B1A3DAB1E00379EA3 /* SCJoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCJoinViewController.h; sourceTree = "<group>"; };
+		490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCJoinViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				490DF3F91A3DA9B100379EA3 /* AppDelegate.h */,
 				490DF3FA1A3DA9B100379EA3 /* AppDelegate.m */,
-				490DF3FC1A3DA9B100379EA3 /* ViewController.h */,
-				490DF3FD1A3DA9B100379EA3 /* ViewController.m */,
 				490DF3FF1A3DA9B100379EA3 /* Main.storyboard */,
 				490DF4021A3DA9B100379EA3 /* Images.xcassets */,
 				490DF4041A3DA9B100379EA3 /* LaunchScreen.xib */,
 				490DF3F51A3DA9B100379EA3 /* Supporting Files */,
+				490DF41B1A3DAB1E00379EA3 /* SCJoinViewController.h */,
+				490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */,
 			);
 			path = SaoChat;
 			sourceTree = "<group>";
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490DF3FE1A3DA9B100379EA3 /* ViewController.m in Sources */,
 				490DF3FB1A3DA9B100379EA3 /* AppDelegate.m in Sources */,
+				490DF41D1A3DAB1E00379EA3 /* SCJoinViewController.m in Sources */,
 				490DF3F81A3DA9B100379EA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

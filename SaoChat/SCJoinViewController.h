@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SCJoinViewController.h
 //  SaoChat
 //
 //  Created by lvjian on 12/14/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SCJoinViewController : UIViewController
 
 @end
-
