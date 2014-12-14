@@ -47,6 +47,35 @@
             </objects>
             <point key="canvasLocation" x="286" y="498"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="2QW-Up-Hs1">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="5Im-3Z-Idm" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NV2-Bh-aGg"/>
+                        <viewControllerLayoutGuide type="bottom" id="jSE-Si-uB9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jAj-co-eYf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAm-dG-7X5">
+                                <rect key="frame" x="16" y="20" width="288" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="aAm-dG-7X5" id="K3E-co-foG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGI-gs-s6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="498"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

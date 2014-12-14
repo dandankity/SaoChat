@@ -31,6 +31,11 @@
 
     [manager POST:@"http://localhost:3000/users.json" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
+        [[NSUserDefaults standardUserDefaults] setObject:responseObject forKey:@"currentUser"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainViewController"]
+                           animated:YES completion:nil];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
