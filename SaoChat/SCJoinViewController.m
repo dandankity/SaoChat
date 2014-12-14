@@ -34,7 +34,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:responseObject forKey:@"currentUser"];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainViewController"]
+        [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainTabBarController"]
                            animated:YES completion:nil];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
