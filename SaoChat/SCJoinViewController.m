@@ -26,7 +26,9 @@
 
 #pragma mark - IBAction
 - (IBAction)handleJoinAction:(id)sender {
-    
+    [self.nickNameField resignFirstResponder];
+    NSString *nickName = self.nickNameField.text;
+    NSLog(@"join thoughtworks chat with nick name: %@", nickName);
 }
 
 
