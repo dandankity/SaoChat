@@ -1,12 +1,5 @@
-//
-//  SCJoinViewController.m
-//  SaoChat
-//
-//  Created by lvjian on 12/14/14.
-//  Copyright (c) 2014 lvjian. All rights reserved.
-//
-
 #import "SCJoinViewController.h"
+#import "AFHTTPRequestOperationManager.h"
 
 @interface SCJoinViewController ()
 
@@ -29,6 +22,18 @@
     [self.nickNameField resignFirstResponder];
     NSString *nickName = self.nickNameField.text;
     NSLog(@"join thoughtworks chat with nick name: %@", nickName);
+
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.requestSerializer.HTTPMethodsEncodingParametersInURI = [NSSet setWithArray:@[@"POST", @"GET", @"HEAD"]];
+    NSDictionary *parameters = @{@"user[name]": nickName, @"user[avator_url]": @""};
+
+
+    [manager POST:@"http://localhost:3000/users.json" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 
