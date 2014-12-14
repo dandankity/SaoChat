@@ -24,6 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBAction
+- (IBAction)handleJoinAction:(id)sender {
+    
+}
+
+
 /*
 #pragma mark - Navigation
 
