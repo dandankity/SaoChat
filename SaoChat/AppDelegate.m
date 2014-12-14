@@ -16,7 +16,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    id currentUser = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentUser"];
+
+    if (currentUser == nil) {
+        NSLog(@"current user is not existed. start with join...");
+        return YES;
+    }
+
+    NSLog(@"start with contacts");
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
