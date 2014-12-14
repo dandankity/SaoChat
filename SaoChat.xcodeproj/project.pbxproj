@@ -41,6 +41,7 @@
 		490DF4111A3DA9B100379EA3 /* SaoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaoChatTests.m; sourceTree = "<group>"; };
 		490DF41B1A3DAB1E00379EA3 /* SCJoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCJoinViewController.h; sourceTree = "<group>"; };
 		490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCJoinViewController.m; sourceTree = "<group>"; };
+		4987B00B1A3DD24D0050CDC5 /* SCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHeader.h; path = XSMacro/SCHeader.h; sourceTree = "<group>"; };
 		57445085F48248623EE11142 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A8C18CAC9E8CC9F74B2A956 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC63E19212D2F5ECC6FCCCE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		490DF3F41A3DA9B100379EA3 /* SaoChat */ = {
 			isa = PBXGroup;
 			children = (
+				4987B00A1A3DD2300050CDC5 /* SCMacro */,
 				490DF3F91A3DA9B100379EA3 /* AppDelegate.h */,
 				490DF3FA1A3DA9B100379EA3 /* AppDelegate.m */,
 				490DF3FF1A3DA9B100379EA3 /* Main.storyboard */,
@@ -132,6 +134,14 @@
 				490DF4101A3DA9B100379EA3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4987B00A1A3DD2300050CDC5 /* SCMacro */ = {
+			isa = PBXGroup;
+			children = (
+				4987B00B1A3DD24D0050CDC5 /* SCHeader.h */,
+			);
+			name = SCMacro;
 			sourceTree = "<group>";
 		};
 		B1195234E0D2F2468F672F7C /* Pods */ = {

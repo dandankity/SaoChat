@@ -1,12 +1,5 @@
-//
-//  AppDelegate.m
-//  SaoChat
-//
-//  Created by lvjian on 12/14/14.
-//  Copyright (c) 2014 lvjian. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "SCHeader.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +9,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    id currentUser = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentUser"];
+    id currentUser = [[NSUserDefaults standardUserDefaults] objectForKey:kCurrentUser];
 
     if (currentUser == nil) {
         NSLog(@"current user is not existed. start with join...");
@@ -25,7 +18,7 @@
 
     NSLog(@"start with contacts");
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    self.window.rootViewController = STORYBOARD_CONTROLLER(MAIN_CONTROLLER_ID);
     [self.window makeKeyAndVisible];
 
     return YES;
