@@ -64,26 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vj6-Ib-huT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="813"/>
-        </scene>
-        <!--SaoChat-->
-        <scene sceneID="6FW-q6-8gT">
-            <objects>
-                <viewController id="MDo-Z5-eBi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DzE-7w-Of8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dcd-mE-NpJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fyg-rv-aIZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="SaoChat" id="Dtg-s4-kcc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NIu-3M-boR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1754" y="183"/>
+            <point key="canvasLocation" x="1684" y="813"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="t2K-pW-Fts">
@@ -116,12 +97,39 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="MDo-Z5-eBi" kind="relationship" relationship="rootViewController" id="vie-4Y-zyj"/>
+                        <segue destination="zPZ-GE-MIK" kind="relationship" relationship="rootViewController" id="z49-Jv-rhZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3OQ-4J-YGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1222" y="183"/>
+        </scene>
+        <!--SaoChat-->
+        <scene sceneID="R6E-qw-xVF">
+            <objects>
+                <tableViewController storyboardIdentifier="ContactsViewController" id="zPZ-GE-MIK" customClass="SCContactsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1wH-Gr-hhc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8a3-6A-R0v">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8a3-6A-R0v" id="tqi-Ug-Wwk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zPZ-GE-MIK" id="e7s-Te-ZTY"/>
+                            <outlet property="delegate" destination="zPZ-GE-MIK" id="NhG-OU-pTD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="SaoChat" id="XvL-bk-4j1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EmF-54-DRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="184"/>
         </scene>
         <!--Me-->
         <scene sceneID="qee-Nl-Tzc">
