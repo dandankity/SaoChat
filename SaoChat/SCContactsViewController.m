@@ -33,6 +33,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)refresh:(id)sender {
+    [self loadData];
+}
+
 #pragma mark - network
 - (void) loadData {
 

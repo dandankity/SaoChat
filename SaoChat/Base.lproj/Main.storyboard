@@ -139,7 +139,13 @@
                             <outlet property="delegate" destination="zPZ-GE-MIK" id="za7-dR-GtX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SaoChat" id="XvL-bk-4j1"/>
+                    <navigationItem key="navigationItem" title="SaoChat" id="XvL-bk-4j1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Ozl-Dk-Zca">
+                            <connections>
+                                <action selector="refresh:" destination="zPZ-GE-MIK" id="VPZ-jS-AOd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="view" destination="1wH-Gr-hhc" id="iYw-H0-y0P"/>
                     </connections>
