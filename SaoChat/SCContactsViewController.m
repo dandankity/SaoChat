@@ -7,9 +7,11 @@
 //
 
 #import "SCContactsViewController.h"
+#import "SCContact.h"
 
 @interface SCContactsViewController ()
 
+@property(strong, nonatomic) NSArray *contacts;
 @end
 
 @implementation SCContactsViewController
@@ -22,6 +24,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,29 +33,47 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - network
+- (void) loadData {
+
+    [SCContact listWithSuccess:^(NSArray *contacts) {
+        self.contacts = contacts;
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+    }];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return _contacts.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *cellReuseID = @"ContactCellID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseID forIndexPath:indexPath];
+
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellReuseID];
+    }
     
     // Configure the cell...
-    
+    SCContact *model = [_contacts objectAtIndex:indexPath.row];
+    cell.textLabel.text = model.name;
+    cell.detailTextLabel.text = @"Good to see u";
+
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

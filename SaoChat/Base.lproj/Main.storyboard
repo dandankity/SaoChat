@@ -113,19 +113,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8a3-6A-R0v">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCellID" textLabel="ldD-ZG-c7K" detailTextLabel="8Qu-RC-gHu" style="IBUITableViewCellStyleSubtitle" id="8a3-6A-R0v">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8a3-6A-R0v" id="tqi-Ug-Wwk">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ldD-ZG-c7K">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Qu-RC-gHu">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="zPZ-GE-MIK" id="e7s-Te-ZTY"/>
-                            <outlet property="delegate" destination="zPZ-GE-MIK" id="NhG-OU-pTD"/>
+                            <outlet property="dataSource" destination="zPZ-GE-MIK" id="Lk2-Gg-IH7"/>
+                            <outlet property="delegate" destination="zPZ-GE-MIK" id="za7-dR-GtX"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="SaoChat" id="XvL-bk-4j1"/>
+                    <connections>
+                        <outlet property="view" destination="1wH-Gr-hhc" id="iYw-H0-y0P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmF-54-DRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

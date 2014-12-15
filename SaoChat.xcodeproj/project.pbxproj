@@ -14,6 +14,7 @@
 		490DF4061A3DA9B100379EA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490DF4041A3DA9B100379EA3 /* LaunchScreen.xib */; };
 		490DF4121A3DA9B100379EA3 /* SaoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF4111A3DA9B100379EA3 /* SaoChatTests.m */; };
 		490DF41D1A3DAB1E00379EA3 /* SCJoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */; };
+		495853411A3F2B71007AF328 /* SCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 495853401A3F2B71007AF328 /* SCContact.m */; };
 		4987B0111A3DD5060050CDC5 /* SCContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4987B0101A3DD5060050CDC5 /* SCContactsViewController.m */; };
 		5BA688536FFCD7831DD63981 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8C18CAC9E8CC9F74B2A956 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,8 @@
 		490DF4111A3DA9B100379EA3 /* SaoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaoChatTests.m; sourceTree = "<group>"; };
 		490DF41B1A3DAB1E00379EA3 /* SCJoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCJoinViewController.h; sourceTree = "<group>"; };
 		490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCJoinViewController.m; sourceTree = "<group>"; };
+		4958533F1A3F2B71007AF328 /* SCContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCContact.h; path = SCModel/SCContact.h; sourceTree = "<group>"; };
+		495853401A3F2B71007AF328 /* SCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCContact.m; path = SCModel/SCContact.m; sourceTree = "<group>"; };
 		4987B00B1A3DD24D0050CDC5 /* SCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHeader.h; path = XSMacro/SCHeader.h; sourceTree = "<group>"; };
 		4987B00F1A3DD5060050CDC5 /* SCContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContactsViewController.h; sourceTree = "<group>"; };
 		4987B0101A3DD5060050CDC5 /* SCContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContactsViewController.m; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		490DF3F41A3DA9B100379EA3 /* SaoChat */ = {
 			isa = PBXGroup;
 			children = (
+				495853421A3F2B7C007AF328 /* SCModel */,
 				4987B00A1A3DD2300050CDC5 /* SCMacro */,
 				490DF3F91A3DA9B100379EA3 /* AppDelegate.h */,
 				490DF3FA1A3DA9B100379EA3 /* AppDelegate.m */,
@@ -139,6 +143,15 @@
 				490DF4101A3DA9B100379EA3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495853421A3F2B7C007AF328 /* SCModel */ = {
+			isa = PBXGroup;
+			children = (
+				4958533F1A3F2B71007AF328 /* SCContact.h */,
+				495853401A3F2B71007AF328 /* SCContact.m */,
+			);
+			name = SCModel;
 			sourceTree = "<group>";
 		};
 		4987B00A1A3DD2300050CDC5 /* SCMacro */ = {
@@ -294,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				490DF3FB1A3DA9B100379EA3 /* AppDelegate.m in Sources */,
+				495853411A3F2B71007AF328 /* SCContact.m in Sources */,
 				490DF41D1A3DAB1E00379EA3 /* SCJoinViewController.m in Sources */,
 				4987B0111A3DD5060050CDC5 /* SCContactsViewController.m in Sources */,
 				490DF3F81A3DA9B100379EA3 /* main.m in Sources */,
