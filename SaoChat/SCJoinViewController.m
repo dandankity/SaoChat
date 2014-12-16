@@ -25,10 +25,7 @@
     NSLog(@"join thoughtworks chat with nick name: %@", nickName);
 
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    manager.requestSerializer.HTTPMethodsEncodingParametersInURI = [NSSet setWithArray:@[@"POST", @"GET", @"HEAD"]];
-    NSDictionary *parameters = @{@"user[name]": nickName, @"user[avator_url]": @""};
-
+    NSDictionary *parameters = @{@"user[name]": nickName, @"user[avator_url]": @"http://tp4.sinaimg.cn/1655973031/180/5672535961/1"};
 
     [manager POST:@"http://localhost:3000/users.json" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);

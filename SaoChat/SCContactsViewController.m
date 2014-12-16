@@ -8,6 +8,7 @@
 
 #import "SCContactsViewController.h"
 #import "SCContact.h"
+#import "UIImageView+WebCache.h"
 
 @interface SCContactsViewController ()
 
@@ -90,6 +91,9 @@
     SCContact *model = [_contacts objectAtIndex:indexPath.row];
     cell.textLabel.text = model.name;
     cell.detailTextLabel.text = @"Good to see u";
+
+    [cell.imageView sd_setImageWithURL:model.avatorUrl
+                      placeholderImage:[UIImage imageNamed:@"default_avatar.png"]];
 
     return cell;
 }
