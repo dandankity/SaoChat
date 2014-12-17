@@ -108,12 +108,12 @@
         <scene sceneID="R6E-qw-xVF">
             <objects>
                 <tableViewController storyboardIdentifier="ContactsViewController" id="zPZ-GE-MIK" customClass="SCContactsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1wH-Gr-hhc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="1wH-Gr-hhc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCellID" textLabel="ldD-ZG-c7K" detailTextLabel="8Qu-RC-gHu" style="IBUITableViewCellStyleSubtitle" id="8a3-6A-R0v">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCellID" textLabel="ldD-ZG-c7K" detailTextLabel="8Qu-RC-gHu" imageView="F9K-ZI-2pc" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="8a3-6A-R0v">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8a3-6A-R0v" id="tqi-Ug-Wwk">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -130,6 +130,9 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="default_avatar.png" id="F9K-ZI-2pc">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -174,6 +177,9 @@
             <point key="canvasLocation" x="1222" y="813"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_avatar.png" width="200" height="200"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
