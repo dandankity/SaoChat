@@ -17,6 +17,8 @@
 		491FEC0F1A4084B500C644C8 /* default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 491FEC0E1A4084B500C644C8 /* default_avatar.png */; };
 		495853411A3F2B71007AF328 /* SCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 495853401A3F2B71007AF328 /* SCContact.m */; };
 		4987B0111A3DD5060050CDC5 /* SCContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4987B0101A3DD5060050CDC5 /* SCContactsViewController.m */; };
+		49A097D11A416B030012A7BA /* SCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A097D01A416B030012A7BA /* SCMeViewController.m */; };
+		49A097D31A416C940012A7BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A097D21A416C940012A7BA /* QuartzCore.framework */; };
 		5BA688536FFCD7831DD63981 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8C18CAC9E8CC9F74B2A956 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,9 @@
 		4987B00B1A3DD24D0050CDC5 /* SCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCHeader.h; path = XSMacro/SCHeader.h; sourceTree = "<group>"; };
 		4987B00F1A3DD5060050CDC5 /* SCContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContactsViewController.h; sourceTree = "<group>"; };
 		4987B0101A3DD5060050CDC5 /* SCContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContactsViewController.m; sourceTree = "<group>"; };
+		49A097CF1A416B030012A7BA /* SCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMeViewController.h; sourceTree = "<group>"; };
+		49A097D01A416B030012A7BA /* SCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMeViewController.m; sourceTree = "<group>"; };
+		49A097D21A416C940012A7BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		57445085F48248623EE11142 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A8C18CAC9E8CC9F74B2A956 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC63E19212D2F5ECC6FCCCE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A097D31A416C940012A7BA /* QuartzCore.framework in Frameworks */,
 				5BA688536FFCD7831DD63981 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +83,7 @@
 		22DABCBA37C711AD8D38D877 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49A097D21A416C940012A7BA /* QuartzCore.framework */,
 				9A8C18CAC9E8CC9F74B2A956 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -117,6 +124,8 @@
 				490DF41C1A3DAB1E00379EA3 /* SCJoinViewController.m */,
 				4987B00F1A3DD5060050CDC5 /* SCContactsViewController.h */,
 				4987B0101A3DD5060050CDC5 /* SCContactsViewController.m */,
+				49A097CF1A416B030012A7BA /* SCMeViewController.h */,
+				49A097D01A416B030012A7BA /* SCMeViewController.m */,
 			);
 			path = SaoChat;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A097D11A416B030012A7BA /* SCMeViewController.m in Sources */,
 				490DF3FB1A3DA9B100379EA3 /* AppDelegate.m in Sources */,
 				495853411A3F2B71007AF328 /* SCContact.m in Sources */,
 				490DF41D1A3DAB1E00379EA3 /* SCJoinViewController.m in Sources */,
